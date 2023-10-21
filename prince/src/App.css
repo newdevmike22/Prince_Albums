@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Roboto:wght@300;400;500;900&family=Satisfy&display=swap');
+
+html {
+  scroll-behavior: smooth;
+  color: gray;
+  font-size: 12px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+  background: #f5f2f7;
+  color: #222;
+}
+
+.name {
+  color: #41039e;
+  font-family: Mr Dafoe;
+  font-size: 6rem;
+  margin-top: 4rem;
+  margin-bottom: -20px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: Roboto, sans-serif;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.albumlist {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 5rem auto;
+  display: grid;
+  gap: 2rem;
+}
+
+@media screen and (min-width:768px) {
+  .albumlist {
+    grid-template-columns: repeat(3, 1fr);
+  }  
+}
+
+.album {
+  background: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  text-align: center;
+}
+
+.album img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.album img:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.album h2 {
+  color: #41039e;
+  font-size: 2rem;
+  font-weight: 900;
+  margin: 1rem 0 -15px 0;
+
+}
+
+.album h4 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
